@@ -13,6 +13,9 @@
 		F2FBBD0C28ED808500B72E77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FBBD0A28ED808500B72E77 /* Main.storyboard */; };
 		F2FBBD0E28ED808600B72E77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FBBD0D28ED808600B72E77 /* Assets.xcassets */; };
 		F2FBBD1128ED808600B72E77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FBBD0F28ED808600B72E77 /* LaunchScreen.storyboard */; };
+		F2FBBD1A28ED811800B72E77 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FBBD1928ED811800B72E77 /* HTTPMethod.swift */; };
+		F2FBBD1C28EDF76E00B72E77 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FBBD1B28EDF76E00B72E77 /* HTTPRequest.swift */; };
+		F2FBBD1E28EDF95500B72E77 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FBBD1D28EDF95500B72E77 /* HTTPResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		F2FBBD0D28ED808600B72E77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2FBBD1028ED808600B72E77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2FBBD1228ED808600B72E77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2FBBD1928ED811800B72E77 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		F2FBBD1B28EDF76E00B72E77 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		F2FBBD1D28EDF95500B72E77 /* HTTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		F2FBBD0328ED808500B72E77 /* HTTP-networking-stack */ = {
 			isa = PBXGroup;
 			children = (
+				F2FBBD1828ED80FB00B72E77 /* Networking */,
 				F2FBBD0428ED808500B72E77 /* AppDelegate.swift */,
 				F2FBBD0628ED808500B72E77 /* SceneDelegate.swift */,
 				F2FBBD0828ED808500B72E77 /* ViewController.swift */,
@@ -65,6 +72,16 @@
 				F2FBBD1228ED808600B72E77 /* Info.plist */,
 			);
 			path = "HTTP-networking-stack";
+			sourceTree = "<group>";
+		};
+		F2FBBD1828ED80FB00B72E77 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F2FBBD1928ED811800B72E77 /* HTTPMethod.swift */,
+				F2FBBD1B28EDF76E00B72E77 /* HTTPRequest.swift */,
+				F2FBBD1D28EDF95500B72E77 /* HTTPResponse.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FBBD1E28EDF95500B72E77 /* HTTPResponse.swift in Sources */,
+				F2FBBD1A28ED811800B72E77 /* HTTPMethod.swift in Sources */,
 				F2FBBD0928ED808500B72E77 /* ViewController.swift in Sources */,
+				F2FBBD1C28EDF76E00B72E77 /* HTTPRequest.swift in Sources */,
 				F2FBBD0528ED808500B72E77 /* AppDelegate.swift in Sources */,
 				F2FBBD0728ED808500B72E77 /* SceneDelegate.swift in Sources */,
 			);
