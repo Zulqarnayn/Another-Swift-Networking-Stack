@@ -13,6 +13,10 @@ public struct HTTPRequest {
     public var headers: [String: String] = [:]
     public var body: HTTPBody = EmptyBody()
     
+    public var url: URL? {
+        urlComponents.url
+    }
+    
     public init() {
         urlComponents.scheme = "https"
     }
